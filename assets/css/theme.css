@@ -519,22 +519,51 @@ a:hover {
     color: var(--primary-navy);
 }
 
-/* Dropdown */
+/* Dropdown Styles */
+.navbar-pragma .dropdown {
+    position: relative;
+}
+
+.navbar-pragma .dropdown-toggle::after {
+    display: none;
+    /* Hide default Bootstrap caret, using custom icon instead */
+}
+
 .navbar-pragma .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10000;
+    display: none;
+    min-width: 200px;
+    padding: 0.5rem 0;
+    margin-top: 0.25rem;
+    background-color: #fff;
     border: none;
-    box-shadow: var(--shadow-lg);
     border-radius: var(--radius-md);
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+    box-shadow: var(--shadow-lg);
+}
+
+/* Show dropdown when triggered by Bootstrap */
+.navbar-pragma .dropdown-menu.show {
+    display: block;
 }
 
 .navbar-pragma .dropdown-item {
-    border-radius: var(--radius-sm);
+    display: block;
+    width: 100%;
     padding: 0.75rem 1rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: var(--radius-sm);
+    margin: 0 0.25rem;
+    width: calc(100% - 0.5rem);
     transition: var(--transition-fast);
 }
 
-.navbar-pragma .dropdown-item:hover {
+.navbar-pragma .dropdown-item:hover,
+.navbar-pragma .dropdown-item:focus {
     background: var(--bg-light);
     color: var(--primary-navy);
 }
