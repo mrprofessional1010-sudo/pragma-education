@@ -568,6 +568,41 @@ a:hover {
     color: var(--primary-navy);
 }
 
+/* CSS-only hover dropdown (works without JavaScript) */
+@media (min-width: 992px) {
+
+    .navbar-pragma .dropdown:hover>.dropdown-menu,
+    .navbar-pragma .dropdown:focus-within>.dropdown-menu {
+        display: block !important;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .navbar-pragma .dropdown-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.2s ease;
+    }
+
+    .navbar-pragma .dropdown:hover>.dropdown-menu {
+        animation: dropdownFadeIn 0.2s ease forwards;
+    }
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* ================================================================
    7. HERO SECTION
    ================================================================ */
