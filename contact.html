@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Contact Us - Pragma Education</title>
+    <meta content="Get in touch with Pragma Education. Contact us for course inquiries, admissions, and support."
+        name="description">
+
+    <link href="assets/new-img/favicon.png" rel="icon">
+    <link href="assets/new-img/favicon.png" rel="apple-touch-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+
+    <style>
+        .contact-card {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            text-align: center;
+            transition: var(--transition-normal);
+            border: 1px solid var(--border-color);
+            height: 100%;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-navy);
+        }
+
+        .contact-card-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-navy);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.75rem;
+            color: white;
+        }
+
+        .contact-form {
+            background: var(--bg-white);
+            border-radius: var(--radius-xl);
+            padding: 3rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-control-pragma {
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 14px 18px;
+            font-size: 1rem;
+            transition: var(--transition-fast);
+        }
+
+        .form-control-pragma:focus {
+            border-color: var(--primary-navy);
+            box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.1);
+            outline: none;
+        }
+
+        .form-label-pragma {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .map-container {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 400px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader-pragma">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar-pragma scrolled">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html"><img src="assets/new-img/Pragma-Education-Web.png" alt="Pragma Education"
+                        height="50"></a>
+                <div class="nav-links-pragma d-none d-lg-flex align-items-center gap-1">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="courses.html">All Courses</a></li>
+                            <li><a class="dropdown-item" href="courses.html#upsc">UPSC CSE</a></li>
+                            <li><a class="dropdown-item" href="courses.html#ib-acio">IB ACIO</a></li>
+                        </ul>
+                    </div>
+                    <a href="about.html" class="nav-link">About</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="downloads.html">Downloads</a></li>
+                            <li><a class="dropdown-item" href="current-affairs.html">Current Affairs</a></li>
+                            <li><a class="dropdown-item" href="toppers.html">Success Stories</a></li>
+                        </ul>
+                    </div>
+                    <a href="faculties.html" class="nav-link">Faculty</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex align-items-center gap-3">
+                    <a href="login.html" class="nav-link">Login</a>
+                    <a href="register.html" class="btn-pragma btn-gold btn-sm">Get Started</a>
+                </div>
+                <button class="mobile-nav-toggle d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileNav"><i class="bi bi-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="d-flex flex-column gap-2">
+                <a href="index.html" class="nav-link" style="color: var(--primary-navy);">Home</a>
+                <a href="courses.html" class="nav-link" style="color: var(--primary-navy);">Courses</a>
+                <a href="about.html" class="nav-link" style="color: var(--primary-navy);">About</a>
+                <a href="faculties.html" class="nav-link" style="color: var(--primary-navy);">Faculty</a>
+                <a href="contact.html" class="nav-link" style="color: var(--primary-navy);">Contact</a>
+                <hr>
+                <a href="login.html" class="btn-pragma btn-outline-navy">Login</a>
+                <a href="register.html" class="btn-pragma btn-gold">Get Started</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="section section-navy" style="padding-top: 150px;">
+        <div class="container text-center">
+            <span class="badge-pragma badge-gold mb-3" data-aos="fade-up">Get In Touch</span>
+            <h1 class="text-white mb-3" data-aos="fade-up" data-aos-delay="100">Contact Us</h1>
+            <p class="text-white mb-0" style="max-width: 600px; margin: 0 auto; opacity: 0.9;" data-aos="fade-up"
+                data-aos-delay="200">
+                Have questions about our courses? We're here to help you start your journey to success.
+            </p>
+        </div>
+    </section>
+
+    <main id="main">
+        <!-- Contact Cards -->
+        <section class="section">
+            <div class="container">
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-card hover-lift">
+                            <div class="contact-card-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <h5 class="mb-2">Our Location</h5>
+                            <p class="text-muted mb-0">4th Floor, Plot no-29, Road no-76, Jubilee Hills, Hyderabad -
+                                500096</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-card hover-lift">
+                            <div class="contact-card-icon" style="background: var(--gradient-gold);">
+                                <i class="bi bi-telephone-fill" style="color: var(--text-primary);"></i>
+                            </div>
+                            <h5 class="mb-2">Phone</h5>
+                            <p class="mb-1"><a href="tel:919491002123" class="text-muted">+91 9491002123</a></p>
+                            <p class="mb-0"><a href="tel:917896747985" class="text-muted">+91 7896747985</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-card hover-lift">
+                            <div class="contact-card-icon" style="background: var(--gradient-teal);">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <h5 class="mb-2">Email</h5>
+                            <p class="mb-0"><a href="mailto:contact@pragmaeducation.com"
+                                    class="text-muted">contact@pragmaeducation.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="contact-card hover-lift">
+                            <div class="contact-card-icon">
+                                <i class="bi bi-clock-fill"></i>
+                            </div>
+                            <h5 class="mb-2">Working Hours</h5>
+                            <p class="mb-1 text-muted">Mon - Sat: 9 AM - 7 PM</p>
+                            <p class="mb-0 text-muted">Sunday: By Appointment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form & Map -->
+                <div class="row g-4">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="contact-form">
+                            <h3 class="mb-4">Send us a Message</h3>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label-pragma">Full Name *</label>
+                                        <input type="text" class="form-control form-control-pragma"
+                                            placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label-pragma">Email Address *</label>
+                                        <input type="email" class="form-control form-control-pragma"
+                                            placeholder="your@email.com" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label-pragma">Phone Number</label>
+                                        <input type="tel" class="form-control form-control-pragma"
+                                            placeholder="+91 XXXXX XXXXX">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label-pragma">Subject</label>
+                                        <select class="form-control form-control-pragma">
+                                            <option value="">Select Subject</option>
+                                            <option value="admission">Course Admission</option>
+                                            <option value="inquiry">General Inquiry</option>
+                                            <option value="support">Technical Support</option>
+                                            <option value="feedback">Feedback</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label-pragma">Your Message *</label>
+                                        <textarea class="form-control form-control-pragma" rows="5"
+                                            placeholder="Tell us how we can help..." required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn-pragma btn-primary-pragma btn-lg w-100">
+                                            <i class="bi bi-send me-2"></i> Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0837393024887!2d78.40772917516625!3d17.425986083477085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb973be51e0a9d%3A0x99aff4777f8b8c48!2sJubilee%20Hills%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1706600000000!5m2!1sen!2sin"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="mt-4 p-4 bg-light rounded-4" data-aos="fade-up">
+                            <h5 class="mb-3">Connect With Us</h5>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.youtube.com/@pragmaeducation" target="_blank"
+                                    class="btn-pragma btn-outline-navy">
+                                    <i class="bi bi-youtube"></i> YouTube
+                                </a>
+                                <a href="https://www.facebook.com/pragmaeducation/" target="_blank"
+                                    class="btn-pragma btn-outline-navy">
+                                    <i class="bi bi-facebook"></i> Facebook
+                                </a>
+                                <a href="https://www.instagram.com/pragmaeducation/" target="_blank"
+                                    class="btn-pragma btn-outline-navy">
+                                    <i class="bi bi-instagram"></i> Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section section-bg">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="badge-pragma badge-navy mb-3">FAQ</span>
+                    <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item mb-3 rounded-3 overflow-hidden border" data-aos="fade-up"
+                                data-aos-delay="100">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        How do I enroll in a course?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        You can enroll in any course by visiting our Courses page, selecting your
+                                        preferred course, and clicking on "Enroll Now". You can also contact our
+                                        counselors for assistance.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3 rounded-3 overflow-hidden border" data-aos="fade-up"
+                                data-aos-delay="200">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        What payment methods do you accept?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We accept all major payment methods including UPI, Credit/Debit Cards, Net
+                                        Banking, and EMI options through secure payment gateways.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3 rounded-3 overflow-hidden border" data-aos="fade-up"
+                                data-aos-delay="300">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        Do you offer demo classes?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, we offer free demo sessions for most of our courses. Contact our team to
+                                        schedule a demo class and experience our teaching methodology.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3 rounded-3 overflow-hidden border" data-aos="fade-up"
+                                data-aos-delay="400">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        What is your refund policy?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Please refer to our Refund and Cancellation Policy page for detailed
+                                        information. Generally, refund requests are processed based on the terms
+                                        mentioned at the time of enrollment.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section-pragma">
+            <div class="container" data-aos="zoom-in">
+                <h2 class="cta-title-pragma">Ready to Start Your Journey?</h2>
+                <p class="cta-text-pragma">Join thousands of successful aspirants who cracked their exams with Pragma
+                    Education.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="register.html" class="btn-pragma btn-gold btn-lg">
+                        <i class="bi bi-person-plus"></i> Register Now
+                    </a>
+                    <a href="courses.html" class="btn-pragma btn-outline-white btn-lg">
+                        <i class="bi bi-book"></i> View Courses
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-pragma">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-logo-pragma">Pragma <span>Education</span></div>
+                    <p class="footer-text-pragma">Empowering students with comprehensive exam preparation, expert
+                        mentorship, and holistic development.</p>
+                    <div class="footer-social-pragma">
+                        <a href="https://www.youtube.com/@pragmaeducation" target="_blank"><i
+                                class="bi bi-youtube"></i></a>
+                        <a href="https://www.facebook.com/pragmaeducation/" target="_blank"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/pragmaeducation/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title-pragma">Quick Links</h5>
+                    <ul class="footer-links-pragma">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title-pragma">Resources</h5>
+                    <ul class="footer-links-pragma">
+                        <li><a href="toppers.html">Success Stories</a></li>
+                        <li><a href="faculties.html">Faculty</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="current-affairs.html">Current Affairs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title-pragma">Contact Us</h5>
+                    <ul class="footer-links-pragma">
+                        <li><i class="bi bi-geo-alt me-2" style="color: var(--accent-gold);"></i> 4th Floor, Plot no-29,
+                            Jubilee Hills, Hyderabad-96</li>
+                        <li><i class="bi bi-telephone me-2" style="color: var(--accent-gold);"></i> <a
+                                href="tel:919491002123">+91 9491002123</a></li>
+                        <li><i class="bi bi-envelope me-2" style="color: var(--accent-gold);"></i> <a
+                                href="mailto:contact@pragmaeducation.com">contact@pragmaeducation.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-pragma">
+                <p class="mb-0">© 2025 <strong>Pragma Education</strong>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top-pragma" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
+
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => backToTop.classList.toggle('visible', window.scrollY > 300));
+        backToTop.addEventListener('click', (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+        window.addEventListener('load', () => {
+            document.getElementById('preloader-pragma').classList.add('loaded');
+            setTimeout(() => document.getElementById('preloader-pragma').style.display = 'none', 500);
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

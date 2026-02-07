@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Courses - Pragma Education</title>
+    <meta
+        content="Explore our comprehensive UPSC, IB ACIO, and competitive exam courses. Expert mentorship, complete preparation modules, and proven success strategies."
+        name="description">
+
+    <link href="assets/new-img/favicon.png" rel="icon">
+    <link href="assets/new-img/favicon.png" rel="apple-touch-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader-pragma">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar-pragma scrolled">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html"><img src="assets/new-img/Pragma-Education-Web.png" alt="Pragma Education"
+                        height="50"></a>
+                <div class="nav-links-pragma d-none d-lg-flex align-items-center gap-1">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Courses</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="courses.html">All Courses</a></li>
+                            <li><a class="dropdown-item" href="#upsc">UPSC CSE</a></li>
+                            <li><a class="dropdown-item" href="#ib-acio">IB ACIO</a></li>
+                        </ul>
+                    </div>
+                    <a href="about.html" class="nav-link">About</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="downloads.html">Downloads</a></li>
+                            <li><a class="dropdown-item" href="current-affairs.html">Current Affairs</a></li>
+                            <li><a class="dropdown-item" href="toppers.html">Success Stories</a></li>
+                        </ul>
+                    </div>
+                    <a href="faculties.html" class="nav-link">Faculty</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex align-items-center gap-3">
+                    <a href="login.html" class="nav-link">Login</a>
+                    <a href="register.html" class="btn-pragma btn-gold btn-sm">Get Started</a>
+                </div>
+                <button class="mobile-nav-toggle d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileNav"><i class="bi bi-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="d-flex flex-column gap-2">
+                <a href="index.html" class="nav-link" style="color: var(--primary-navy);">Home</a>
+                <a href="courses.html" class="nav-link" style="color: var(--primary-navy);">Courses</a>
+                <a href="about.html" class="nav-link" style="color: var(--primary-navy);">About</a>
+                <a href="faculties.html" class="nav-link" style="color: var(--primary-navy);">Faculty</a>
+                <a href="contact.html" class="nav-link" style="color: var(--primary-navy);">Contact</a>
+                <hr>
+                <a href="login.html" class="btn-pragma btn-outline-navy">Login</a>
+                <a href="register.html" class="btn-pragma btn-gold">Get Started</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="section section-navy" style="padding-top: 150px;">
+        <div class="container text-center">
+            <span class="badge-pragma badge-gold mb-3" data-aos="fade-up">Our Courses</span>
+            <h1 class="text-white mb-3" data-aos="fade-up" data-aos-delay="100">Comprehensive Exam Preparation</h1>
+            <p class="text-white mb-0" style="max-width: 600px; margin: 0 auto; opacity: 0.9;" data-aos="fade-up"
+                data-aos-delay="200">
+                Expert-designed courses for UPSC, IB ACIO, and government examinations with complete mentorship support.
+            </p>
+        </div>
+    </section>
+
+    <main id="main">
+        <!-- Course Categories -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center mb-5" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap gap-2 justify-content-center">
+                            <button class="btn-pragma btn-primary-pragma btn-sm filter-btn active" data-filter="all">All
+                                Courses</button>
+                            <button class="btn-pragma btn-outline-navy btn-sm filter-btn" data-filter="ib-acio">IB
+                                ACIO</button>
+                            <button class="btn-pragma btn-outline-navy btn-sm filter-btn" data-filter="upsc">UPSC
+                                CSE</button>
+                            <button class="btn-pragma btn-outline-navy btn-sm filter-btn"
+                                data-filter="technical">Technical</button>
+                            <button class="btn-pragma btn-outline-navy btn-sm filter-btn"
+                                data-filter="personal">Personal Development</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IB ACIO Courses -->
+                <div class="mb-5" id="ib-acio">
+                    <div class="text-center mb-4" data-aos="fade-up">
+                        <span class="badge-pragma badge-navy">Intelligence Bureau</span>
+                        <h3 class="mt-3">IB ACIO-II Examination Courses</h3>
+                        <p class="text-muted">Complete preparation for Intelligence Bureau ACIO-II/Executive examination
+                        </p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-pragma course-card-pragma hover-lift h-100">
+                                <div class="course-image-pragma">
+                                    <i class="bi bi-shield-shaded"
+                                        style="font-size: 4rem; color: rgba(255,255,255,0.9);"></i>
+                                    <span class="course-badge-pragma">Popular</span>
+                                </div>
+                                <div class="course-content-pragma">
+                                    <h5 class="course-title-pragma">IB ACIO-II 2025 - Regular Batch (Online)</h5>
+                                    <p class="course-text-pragma">Complete online preparation for all tiers of IB
+                                        ACIO-II examination with live classes and doubt resolution.</p>
+                                    <div class="d-flex gap-2 mb-3 flex-wrap">
+                                        <span class="badge-pragma badge-navy">Online</span>
+                                        <span class="badge-pragma badge-teal">All Tiers</span>
+                                        <span class="badge-pragma badge-gold">Live Classes</span>
+                                    </div>
+                                    <div class="course-footer-pragma">
+                                        <a href="course-details.html?course_id=C379499013"
+                                            class="btn-pragma btn-primary-pragma btn-sm">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-pragma course-card-pragma hover-lift h-100">
+                                <div class="course-image-pragma" style="background: var(--gradient-teal);">
+                                    <i class="bi bi-calendar-week" style="font-size: 4rem; color: white;"></i>
+                                </div>
+                                <div class="course-content-pragma">
+                                    <h5 class="course-title-pragma">IB ACIO-II 2025 - Weekend Batch (Offline)</h5>
+                                    <p class="course-text-pragma">Classroom training on weekends for working
+                                        professionals. Personal interaction with mentors.</p>
+                                    <div class="d-flex gap-2 mb-3 flex-wrap">
+                                        <span class="badge-pragma badge-teal">Offline</span>
+                                        <span class="badge-pragma badge-navy">Weekend</span>
+                                        <span class="badge-pragma badge-gold">Hyderabad</span>
+                                    </div>
+                                    <div class="course-footer-pragma">
+                                        <a href="course-details.html?course_id=C602198839"
+                                            class="btn-pragma btn-primary-pragma btn-sm">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-pragma course-card-pragma hover-lift h-100">
+                                <div class="course-image-pragma"
+                                    style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                                    <i class="bi bi-pencil-square" style="font-size: 4rem; color: white;"></i>
+                                </div>
+                                <div class="course-content-pragma">
+                                    <h5 class="course-title-pragma">Tier-02 Exam Workshop</h5>
+                                    <p class="course-text-pragma">Intensive workshop focused on Tier-2 descriptive paper
+                                        preparation and writing skills.</p>
+                                    <div class="d-flex gap-2 mb-3 flex-wrap">
+                                        <span class="badge-pragma badge-gold">Workshop</span>
+                                        <span class="badge-pragma badge-navy">Intensive</span>
+                                    </div>
+                                    <div class="course-footer-pragma">
+                                        <a href="course-details.html?course_id=C532678950"
+                                            class="btn-pragma btn-primary-pragma btn-sm">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-pragma course-card-pragma hover-lift h-100">
+                                <div class="course-image-pragma">
+                                    <i class="bi bi-layers" style="font-size: 4rem; color: rgba(255,255,255,0.9);"></i>
+                                </div>
+                                <div class="course-content-pragma">
+                                    <h5 class="course-title-pragma">Tier-02 Exam Coaching Module</h5>
+                                    <p class="course-text-pragma">Comprehensive coaching module specifically designed
+                                        for IB ACIO Tier-2 examination.</p>
+                                    <div class="d-flex gap-2 mb-3 flex-wrap">
+                                        <span class="badge-pragma badge-navy">Module</span>
+                                        <span class="badge-pragma badge-teal">Descriptive</span>
+                                    </div>
+                                    <div class="course-footer-pragma">
+                                        <a href="course-details.html?course_id=C697569749"
+                                            class="btn-pragma btn-primary-pragma btn-sm">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- UPSC Courses -->
+                <div class="mb-5" id="upsc">
+                    <div class="text-center mb-4" data-aos="fade-up">
+                        <span class="badge-pragma badge-gold">Civil Services</span>
+                        <h3 class="mt-3">UPSC CSE Courses</h3>
+                        <p class="text-muted">Complete mentorship for UPSC Civil Services Examination</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-pragma course-card-pragma hover-lift h-100">
+                                <div class="course-image-pragma" style="background: var(--gradient-gold);">
+                                    <i class="bi bi-mortarboard-fill"
+                                        style="font-size: 4rem; color: var(--text-primary);"></i>
+                                    <span class="course-badge-pragma"
+                                        style="background: var(--primary-navy); color: white;">Premium</span>
+                                </div>
+                                <div class="course-content-pragma">
+                                    <h5 class="course-title-pragma">UPSC-CSE Full Mentorship Module [1 Year]</h5>
+                                    <p class="course-text-pragma">Complete one-year mentorship program with personalized
+                                        guidance for UPSC Civil Services Examination.</p>
+                                    <div class="d-flex gap-2 mb-3 flex-wrap">
+                                        <span class="badge-pragma badge-navy">1 Year</span>
+                                        <span class="badge-pragma badge-gold">Mentorship</span>
+                                        <span class="badge-pragma badge-teal">All Stages</span>
+                                    </div>
+                                    <div class="course-footer-pragma">
+                                        <a href="course-details.html?course_id=C400825912"
+                                            class="btn-pragma btn-primary-pragma btn-sm">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-pragma course-card-pragma hover-lift h-100">
+                                <div class="course-image-pragma">
+                                    <i class="bi bi-collection-play"
+                                        style="font-size: 4rem; color: rgba(255,255,255,0.9);"></i>
+                                </div>
+                                <div class="course-content-pragma">
+                                    <h5 class="course-title-pragma">Polity & Economy - Recorded Classes</h5>
+                                    <p class="course-text-pragma">Self-paced recorded video lectures covering Indian
+                                        Polity and Economy for competitive exams.</p>
+                                    <div class="d-flex gap-2 mb-3 flex-wrap">
+                                        <span class="badge-pragma badge-navy">Recorded</span>
+                                        <span class="badge-pragma badge-gold">Self-paced</span>
+                                    </div>
+                                    <div class="course-footer-pragma">
+                                        <a href="course-details.html?course_id=C936429138"
+                                            class="btn-pragma btn-primary-pragma btn-sm">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- Personal Development -->
+                <div class="mb-5" id="personal-development">
+                    <div class="text-center mb-4" data-aos="fade-up">
+                        <span class="badge-pragma badge-teal">Growth</span>
+                        <h3 class="mt-3">Personal Development</h3>
+                        <p class="text-muted">Skill development and career guidance programs</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-pragma course-card-pragma hover-lift h-100">
+                                <div class="course-image-pragma"
+                                    style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);">
+                                    <i class="bi bi-compass" style="font-size: 4rem; color: white;"></i>
+                                    <span class="course-badge-pragma">New</span>
+                                </div>
+                                <div class="course-content-pragma">
+                                    <h5 class="course-title-pragma">PathFinder - Career Guidance</h5>
+                                    <p class="course-text-pragma">Navigate your career path with expert guidance, SWOT
+                                        analysis, and personalized mentorship sessions.</p>
+                                    <div class="d-flex gap-2 mb-3 flex-wrap">
+                                        <span class="badge-pragma badge-navy">Guidance</span>
+                                        <span class="badge-pragma badge-teal">1-on-1</span>
+                                    </div>
+                                    <div class="course-footer-pragma">
+                                        <a href="course-details.html?course_id=C392015320"
+                                            class="btn-pragma btn-primary-pragma btn-sm">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Test Series CTA -->
+        <section class="section section-navy">
+            <div class="container text-center" data-aos="zoom-in">
+                <span class="badge-pragma badge-gold mb-3">Practice & Excel</span>
+                <h2 class="text-white mb-3">Explore Our Test Series</h2>
+                <p class="text-white mb-4" style="opacity: 0.9; max-width: 600px; margin: 0 auto;">
+                    Strengthen your preparation with comprehensive mock tests, weekly assessments, and performance
+                    analysis.
+                </p>
+                <a href="test-series.html" class="btn-pragma btn-gold btn-lg">
+                    <i class="bi bi-pencil-square"></i> View Test Series
+                </a>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section-pragma">
+            <div class="container" data-aos="zoom-in">
+                <h2 class="cta-title-pragma">Need Help Choosing?</h2>
+                <p class="cta-text-pragma">Our counselors can help you select the right course based on your goals and
+                    preparation level.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="contact.html" class="btn-pragma btn-gold btn-lg">
+                        <i class="bi bi-telephone"></i> Talk to Counselor
+                    </a>
+                    <a href="register.html" class="btn-pragma btn-outline-white btn-lg">
+                        <i class="bi bi-person-plus"></i> Register Now
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-pragma">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-logo-pragma">Pragma <span>Education</span></div>
+                    <p class="footer-text-pragma">Empowering students with comprehensive exam preparation, expert
+                        mentorship, and holistic development.</p>
+                    <div class="footer-social-pragma">
+                        <a href="https://www.youtube.com/@pragmaeducation" target="_blank"><i
+                                class="bi bi-youtube"></i></a>
+                        <a href="https://www.facebook.com/pragmaeducation/" target="_blank"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/pragmaeducation/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title-pragma">Quick Links</h5>
+                    <ul class="footer-links-pragma">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title-pragma">Resources</h5>
+                    <ul class="footer-links-pragma">
+                        <li><a href="toppers.html">Success Stories</a></li>
+                        <li><a href="faculties.html">Faculty</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="current-affairs.html">Current Affairs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title-pragma">Contact Us</h5>
+                    <ul class="footer-links-pragma">
+                        <li><i class="bi bi-geo-alt me-2" style="color: var(--accent-gold);"></i> 4th Floor, Plot no-29,
+                            Jubilee Hills, Hyderabad-96</li>
+                        <li><i class="bi bi-telephone me-2" style="color: var(--accent-gold);"></i> <a
+                                href="tel:919491002123">+91 9491002123</a></li>
+                        <li><i class="bi bi-envelope me-2" style="color: var(--accent-gold);"></i> <a
+                                href="mailto:contact@pragmaeducation.com">contact@pragmaeducation.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-pragma">
+                <p class="mb-0">© 2025 <strong>Pragma Education</strong>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top-pragma" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
+
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => backToTop.classList.toggle('visible', window.scrollY > 300));
+        backToTop.addEventListener('click', (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+        window.addEventListener('load', () => {
+            document.getElementById('preloader-pragma').classList.add('loaded');
+            setTimeout(() => document.getElementById('preloader-pragma').style.display = 'none', 500);
+        });
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('btn-primary-pragma', 'active');
+                    b.classList.add('btn-outline-navy');
+                });
+                btn.classList.remove('btn-outline-navy');
+                btn.classList.add('btn-primary-pragma', 'active');
+            });
+        });
+    </script>
+</body>
+
+</html>

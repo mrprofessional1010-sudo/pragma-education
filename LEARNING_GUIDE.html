@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragma Education Website - Complete Learning Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: #1e293b;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            border-bottom: 4px solid #fbbf24;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: #1e3a8a;
+            font-size: 1.8rem;
+            margin: 40px 0 20px;
+            padding: 10px 0;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        h3 {
+            color: #1e40af;
+            font-size: 1.3rem;
+            margin: 30px 0 15px;
+        }
+
+        h4 {
+            color: #14b8a6;
+            font-size: 1.1rem;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        .subtitle {
+            color: #64748b;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #1e40af;
+        }
+
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th {
+            background: #1e3a8a;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .box {
+            background: #f8fafc;
+            border-left: 4px solid #1e3a8a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .box-gold {
+            border-left-color: #fbbf24;
+        }
+
+        .box-teal {
+            border-left-color: #14b8a6;
+        }
+
+        .box-red {
+            border-left-color: #ef4444;
+            background: #fef2f2;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+
+        ul,
+        ol {
+            margin: 15px 0 15px 25px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .toc {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+        }
+
+        .toc ol {
+            margin: 15px 0 0 20px;
+        }
+
+        .section-number {
+            background: #1e3a8a;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 10px;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .diagram {
+            background: #1e293b;
+            color: #22d3ee;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 20px 0;
+            white-space: pre;
+            line-height: 1.4;
+        }
+
+        @media print {
+            body {
+                font-size: 11pt;
+                padding: 0;
+            }
+
+            h1 {
+                font-size: 24pt;
+            }
+
+            h2 {
+                font-size: 18pt;
+                page-break-after: avoid;
+            }
+
+            pre {
+                font-size: 9pt;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📚 Pragma Education Website</h1>
+    <p class="subtitle">Complete Learning Guide - A Beginner's Guide to Understanding, Maintaining, and Extending This
+        Website</p>
+
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <ol>
+            <li>Project Overview</li>
+            <li>Technology Stack</li>
+            <li>Folder & File Structure</li>
+            <li>Page & Component Breakdown</li>
+            <li>Styling & Design System</li>
+            <li>Animations & Interactions</li>
+            <li>State & Logic</li>
+            <li>How to Safely Modify Things</li>
+            <li>Common Beginner Mistakes</li>
+            <li>Learning Path From Here</li>
+        </ol>
+    </div>
+
+    <!-- SECTION 1 -->
+    <h2><span class="section-number">1</span> Project Overview</h2>
+
+    <h3>What Does This Website Do?</h3>
+    <p>Pragma Education is an <strong>educational coaching website</strong> that:</p>
+    <ul>
+        <li>Showcases courses for competitive exams (IB ACIO, UPSC)</li>
+        <li>Provides information about the institution and faculty</li>
+        <li>Allows students to register and login</li>
+        <li>Offers study resources and current affairs updates</li>
+        <li>Displays success stories and testimonials</li>
+    </ul>
+    <div class="box box-gold">
+        <strong>In Simple Terms:</strong> It's like an online brochure + portal for a coaching institute.
+    </div>
+
+    <h3>Architecture: How It's Built</h3>
+    <div class="diagram">
+        ┌─────────────────────────────────────────────────────┐
+        │ FRONTEND ONLY │
+        │ (No Backend/Database in this project) │
+        ├─────────────────────────────────────────────────────┤
+        │ │
+        │ ┌──────────┐ ┌──────────┐ ┌──────────┐ │
+        │ │ HTML │ │ CSS │ │ JS │ │
+        │ │ (Pages) │ │ (Styles) │ │ (Logic) │ │
+        │ └──────────┘ └──────────┘ └──────────┘ │
+        │ │
+        │ Browser reads these files and displays the site │
+        └─────────────────────────────────────────────────────┘</div>
+
+    <h3>Type of Website: Static Website</h3>
+    <table>
+        <tr>
+            <th>Term</th>
+            <th>Meaning</th>
+        </tr>
+        <tr>
+            <td><strong>Static</strong></td>
+            <td>Pages are pre-written HTML files. Content doesn't change based on user.</td>
+        </tr>
+        <tr>
+            <td><strong>Frontend</strong></td>
+            <td>Everything runs in the browser (client-side).</td>
+        </tr>
+        <tr>
+            <td><strong>No Backend</strong></td>
+            <td>No server processing. No database. Just files served directly.</td>
+        </tr>
+    </table>
+
+    <h3>Why This Approach?</h3>
+    <ol>
+        <li><strong>Simple to host</strong> - Just upload files to any web server</li>
+        <li><strong>Fast loading</strong> - No server processing needed</li>
+        <li><strong>Easy to maintain</strong> - Edit HTML files directly</li>
+        <li><strong>Cost-effective</strong> - Can be hosted for free on GitHub Pages, Netlify, etc.</li>
+        <li><strong>Perfect for information websites</strong> - Doesn't need user accounts or dynamic content</li>
+    </ol>
+
+    <!-- SECTION 2 -->
+    <h2 class="page-break"><span class="section-number">2</span> Technology Stack</h2>
+
+    <h3>Languages Used</h3>
+    <table>
+        <tr>
+            <th>Language</th>
+            <th>What It Does</th>
+            <th>Where It's Used</th>
+        </tr>
+        <tr>
+            <td><strong>HTML</strong></td>
+            <td>Structure/Content</td>
+            <td>All <code>.html</code> files</td>
+        </tr>
+        <tr>
+            <td><strong>CSS</strong></td>
+            <td>Styling/Appearance</td>
+            <td>All <code>.css</code> files</td>
+        </tr>
+        <tr>
+            <td><strong>JavaScript</strong></td>
+            <td>Interactivity</td>
+            <td>Animations, form handling</td>
+        </tr>
+    </table>
+
+    <h3>Frameworks & Libraries</h3>
+
+    <h4>1. Bootstrap 5</h4>
+    <p><strong>What:</strong> A CSS framework for responsive design<br>
+        <strong>Why:</strong> Provides pre-built components (buttons, grids, navigation, cards)<br>
+        <strong>Files:</strong> <code>assets/vendor/bootstrap/css/bootstrap.min.css</code>
+    </p>
+    <pre><code>&lt;!-- Bootstrap gives us classes like: --&gt;
+&lt;div class="container"&gt;        &lt;!-- Centers content --&gt;
+&lt;div class="row"&gt;              &lt;!-- Creates a row --&gt;
+&lt;div class="col-lg-6"&gt;         &lt;!-- 6 columns on large screens --&gt;
+&lt;button class="btn btn-primary"&gt; &lt;!-- Styled button --&gt;</code></pre>
+
+    <h4>2. Bootstrap Icons</h4>
+    <p><strong>What:</strong> Icon library with 1,800+ icons<br>
+        <strong>Why:</strong> Provides icons without image files
+    </p>
+    <pre><code>&lt;i class="bi bi-house"&gt;&lt;/i&gt;     &lt;!-- Home icon --&gt;
+&lt;i class="bi bi-person"&gt;&lt;/i&gt;    &lt;!-- Person icon --&gt;
+&lt;i class="bi bi-envelope"&gt;&lt;/i&gt;  &lt;!-- Email icon --&gt;</code></pre>
+
+    <h4>3. AOS (Animate On Scroll)</h4>
+    <p><strong>What:</strong> Animation library<br>
+        <strong>Why:</strong> Makes elements animate when you scroll to them
+    </p>
+    <pre><code>&lt;div data-aos="fade-up"&gt;        &lt;!-- Fades up when scrolled to --&gt;
+&lt;div data-aos="zoom-in"&gt;        &lt;!-- Zooms in when scrolled to --&gt;</code></pre>
+
+    <h4>4. Google Fonts (Inter)</h4>
+    <p><strong>What:</strong> Web font<br>
+        <strong>Why:</strong> Makes text look modern and professional
+    </p>
+
+    <!-- SECTION 3 -->
+    <h2 class="page-break"><span class="section-number">3</span> Folder & File Structure</h2>
+
+    <pre><code>pragmaeducation.com/
+│
+├── index.html              ← Homepage (MAIN ENTRY POINT)
+├── about.html              ← About us page
+├── courses.html            ← All courses listing
+├── contact.html            ← Contact form & info
+├── login.html              ← Student login
+├── register.html           ← Student registration
+├── toppers.html            ← Success stories
+├── faculties.html          ← Faculty/mentors page
+├── downloads.html          ← Study resources
+├── current-affairs.html    ← News updates
+│
+├── assets/
+│   ├── css/
+│   │   ├── theme.css       ← MAIN DESIGN SYSTEM (colors, buttons)
+│   │   ├── style.css       ← Additional styles
+│   │   └── custom.css      ← Custom overrides
+│   │
+│   ├── vendor/
+│   │   ├── bootstrap/      ← Bootstrap framework files
+│   │   └── aos/            ← Animation library files
+│   │
+│   ├── img/                ← General images
+│   └── new-img/            ← New images (logo, hero, etc.)
+│
+└── photos/                 ← Faculty/Team photos</code></pre>
+
+    <h3>Critical Files Explained</h3>
+    <table>
+        <tr>
+            <th>File</th>
+            <th>Purpose</th>
+            <th>If Removed?</th>
+        </tr>
+        <tr>
+            <td><code>index.html</code></td>
+            <td>Main homepage, entry point</td>
+            <td>Website won't work!</td>
+        </tr>
+        <tr>
+            <td><code>assets/css/theme.css</code></td>
+            <td>ALL colors, fonts, buttons, animations</td>
+            <td>No styling - broken look!</td>
+        </tr>
+        <tr>
+            <td><code>assets/vendor/bootstrap/</code></td>
+            <td>Bootstrap framework</td>
+            <td>Layout breaks completely</td>
+        </tr>
+    </table>
+
+    <!-- SECTION 4 -->
+    <h2 class="page-break"><span class="section-number">4</span> Page & Component Breakdown</h2>
+
+    <h3>Every Page Has This Structure</h3>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;!-- 1. META INFO (title, description) --&gt;
+    &lt;!-- 2. CSS LINKS (styling) --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 3. PRELOADER (loading animation) --&gt;
+    &lt;!-- 4. NAVIGATION (top menu) --&gt;
+    &lt;!-- 5. MAIN CONTENT (unique per page) --&gt;
+    &lt;!-- 6. FOOTER --&gt;
+    &lt;!-- 7. JAVASCRIPT (at bottom) --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h3>Component: Navigation Bar</h3>
+    <p><strong>Purpose:</strong> Menu at the top of every page<br>
+        <strong>Key Classes:</strong> <code>.navbar-pragma</code>, <code>.nav-link</code>
+    </p>
+    <pre><code>&lt;nav class="navbar-pragma"&gt;
+    &lt;a href="index.html"&gt;Home&lt;/a&gt;
+    &lt;a href="courses.html"&gt;Courses&lt;/a&gt;
+    ...
+&lt;/nav&gt;</code></pre>
+
+    <h3>Component: Hero Section</h3>
+    <p><strong>Purpose:</strong> First thing users see - big headline + image<br>
+        <strong>Location:</strong> <code>index.html</code> lines 124-186
+    </p>
+
+    <h3>Component: Cards</h3>
+    <p><strong>Purpose:</strong> Display information in boxes<br>
+        <strong>Class:</strong> <code>.card-pragma</code>
+    </p>
+    <pre><code>&lt;div class="card-pragma"&gt;
+    &lt;h5&gt;Card Title&lt;/h5&gt;
+    &lt;p&gt;Card description&lt;/p&gt;
+    &lt;a href="#"&gt;Learn More&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+    <!-- SECTION 5 -->
+    <h2 class="page-break"><span class="section-number">5</span> Styling & Design System</h2>
+
+    <h3>How CSS Works Here</h3>
+    <div class="diagram">Page loads →
+        1. Bootstrap CSS (base styles)
+        2. AOS CSS (animation styles)
+        3. theme.css (OUR custom design)
+        4. style.css (extra styles)
+        5. Page-specific style (if any)
+
+        Priority: Later files override earlier ones.</div>
+
+    <h3>Color System (theme.css)</h3>
+    <p>All colors are defined as CSS Variables:</p>
+    <pre><code>:root {
+    /* PRIMARY - Navy Blue */
+    --primary-navy: #1e3a8a;
+    --primary-navy-dark: #1e40af;
+    --primary-navy-light: #3b82f6;
+    
+    /* ACCENT - Gold */
+    --accent-gold: #fbbf24;
+    --accent-gold-dark: #f59e0b;
+    
+    /* WELLNESS - Teal */
+    --wellness-teal: #14b8a6;
+    
+    /* TEXT */
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+}</code></pre>
+
+    <div class="box box-gold">
+        <strong>🎨 How to Change Colors:</strong><br>
+        1. Open <code>assets/css/theme.css</code><br>
+        2. Find <code>--primary-navy: #1e3a8a;</code><br>
+        3. Change <code>#1e3a8a</code> to your new color<br>
+        4. Save and refresh!<br><br>
+        <em>Every button, header, and accent using Navy will update automatically!</em>
+    </div>
+
+    <h3>Responsive Design</h3>
+    <p>Bootstrap's grid system handles responsiveness:</p>
+    <table>
+        <tr>
+            <th>Class</th>
+            <th>Screen Size</th>
+        </tr>
+        <tr>
+            <td><code>col-</code></td>
+            <td>Extra small (phones)</td>
+        </tr>
+        <tr>
+            <td><code>col-sm-</code></td>
+            <td>Small (≥576px)</td>
+        </tr>
+        <tr>
+            <td><code>col-md-</code></td>
+            <td>Medium (≥768px)</td>
+        </tr>
+        <tr>
+            <td><code>col-lg-</code></td>
+            <td>Large (≥992px)</td>
+        </tr>
+        <tr>
+            <td><code>col-xl-</code></td>
+            <td>Extra large (≥1200px)</td>
+        </tr>
+    </table>
+
+    <!-- SECTION 6 -->
+    <h2 class="page-break"><span class="section-number">6</span> Animations & Interactions</h2>
+
+    <h3>AOS (Animate On Scroll)</h3>
+    <pre><code>&lt;div data-aos="fade-up"&gt;
+    This will fade up when scrolled to
+&lt;/div&gt;
+
+&lt;div data-aos="fade-up" data-aos-delay="200"&gt;
+    This will fade up after 200ms delay
+&lt;/div&gt;</code></pre>
+
+    <h3>Available Animations</h3>
+    <table>
+        <tr>
+            <th>Animation</th>
+            <th>Effect</th>
+        </tr>
+        <tr>
+            <td><code>fade-up</code></td>
+            <td>Fades in from bottom</td>
+        </tr>
+        <tr>
+            <td><code>fade-down</code></td>
+            <td>Fades in from top</td>
+        </tr>
+        <tr>
+            <td><code>fade-left</code></td>
+            <td>Fades in from right</td>
+        </tr>
+        <tr>
+            <td><code>fade-right</code></td>
+            <td>Fades in from left</td>
+        </tr>
+        <tr>
+            <td><code>zoom-in</code></td>
+            <td>Zooms in</td>
+        </tr>
+        <tr>
+            <td><code>zoom-out</code></td>
+            <td>Zooms out</td>
+        </tr>
+    </table>
+
+    <h3>Customization Options</h3>
+    <pre><code>data-aos-duration="1000"   &lt;!-- Animation duration (ms) --&gt;
+data-aos-delay="500"       &lt;!-- Delay before starting --&gt;
+data-aos-once="true"       &lt;!-- Only animate once --&gt;</code></pre>
+
+    <div class="box box-teal">
+        <strong>How to Disable an Animation:</strong><br>
+        Simply remove the <code>data-aos="..."</code> attribute from the element.
+    </div>
+
+    <!-- SECTION 7 -->
+    <h2 class="page-break"><span class="section-number">7</span> State & Logic</h2>
+
+    <h3>No Complex State Management</h3>
+    <p>This is a <strong>static website</strong> - it doesn't store user data or have login sessions.</p>
+
+    <p>The forms (login, register, contact) currently just show alerts:</p>
+    <pre><code>document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();  // Stop form from submitting
+    alert('Login functionality will be connected to backend.');
+});</code></pre>
+
+    <div class="box">
+        <strong>To make forms work for real:</strong> You'd need to add a backend (Node.js, PHP, etc.)
+    </div>
+
+    <h3>Data Flow</h3>
+    <div class="diagram">User visits URL
+        ↓
+        Browser downloads index.html
+        ↓
+        HTML links load CSS files
+        ↓
+        HTML links load JS files
+        ↓
+        Browser renders the page
+        ↓
+        User scrolls → AOS triggers animations
+        ↓
+        User clicks links → Browser loads new HTML file</div>
+
+    <!-- SECTION 8 -->
+    <h2 class="page-break"><span class="section-number">8</span> How to Safely Modify Things</h2>
+
+    <h3>📝 Change Text</h3>
+    <ol>
+        <li>Find the page (e.g., <code>index.html</code>)</li>
+        <li>Use Ctrl+F to search for the text</li>
+        <li>Change the text between HTML tags</li>
+        <li>Save and refresh browser</li>
+    </ol>
+    <pre><code>&lt;!-- Before --&gt;
+&lt;h1&gt;Learn Today, Lead Tomorrow&lt;/h1&gt;
+
+&lt;!-- After --&gt;
+&lt;h1&gt;Your Success Starts Here&lt;/h1&gt;</code></pre>
+
+    <h3>🖼️ Change Images</h3>
+    <ol>
+        <li>Put new image in <code>assets/new-img/</code> folder</li>
+        <li>Find the <code>&lt;img&gt;</code> tag in HTML</li>
+        <li>Change the <code>src</code> attribute</li>
+    </ol>
+    <pre><code>&lt;!-- Before --&gt;
+&lt;img src="assets/new-img/old-image.png" alt="Description"&gt;
+
+&lt;!-- After --&gt;
+&lt;img src="assets/new-img/my-new-image.png" alt="Description"&gt;</code></pre>
+
+    <h3>➕ Add a New Section</h3>
+    <pre><code>&lt;section class="section"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="text-center mb-5"&gt;
+            &lt;h2 class="section-title"&gt;New Section Title&lt;/h2&gt;
+            &lt;p&gt;Description here&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- Your content here --&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+
+    <h3>📄 Add a New Page</h3>
+    <ol>
+        <li>Copy an existing page (e.g., <code>about.html</code>)</li>
+        <li>Rename it (e.g., <code>my-new-page.html</code>)</li>
+        <li>Change the <code>&lt;title&gt;</code> tag</li>
+        <li>Change the main content</li>
+        <li>Add link to navigation in ALL pages</li>
+    </ol>
+
+    <!-- SECTION 9 -->
+    <h2 class="page-break"><span class="section-number">9</span> Common Beginner Mistakes</h2>
+
+    <h3>❌ Things NOT to Touch (Yet)</h3>
+    <div class="box box-red">
+        <table>
+            <tr>
+                <th>File/Folder</th>
+                <th>Why</th>
+            </tr>
+            <tr>
+                <td><code>assets/vendor/bootstrap/</code></td>
+                <td>Framework files - editing breaks the site</td>
+            </tr>
+            <tr>
+                <td><code>assets/vendor/aos/</code></td>
+                <td>Animation library - editing breaks animations</td>
+            </tr>
+            <tr>
+                <td><code>.min.css</code> or <code>.min.js</code> files</td>
+                <td>Minified files - not meant for editing</td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>⚠️ Files That Can Break the App</h3>
+    <ol>
+        <li><strong>Deleting theme.css</strong> → All styling disappears</li>
+        <li><strong>Deleting bootstrap files</strong> → Layout breaks completely</li>
+        <li><strong>Removing &lt;head&gt; links</strong> → Styles won't load</li>
+        <li><strong>Removing closing tags</strong> → Page structure breaks</li>
+    </ol>
+
+    <h3>✅ Safe Experimentation Areas</h3>
+    <ul>
+        <li><strong>Text content</strong> - Change any text between tags</li>
+        <li><strong>Images</strong> - Swap images freely</li>
+        <li><strong>Colors in theme.css</strong> - CSS variables are safe to modify</li>
+        <li><strong>Adding new sections</strong> - Copy existing patterns</li>
+        <li><strong>Adding new pages</strong> - Copy existing pages as templates</li>
+    </ul>
+
+    <!-- SECTION 10 -->
+    <h2 class="page-break"><span class="section-number">10</span> Learning Path From Here</h2>
+
+    <h3>Phase 1: Beginner (Now)</h3>
+    <ul>
+        <li>✅ Understand HTML structure</li>
+        <li>✅ Modify text and images</li>
+        <li>✅ Change colors in theme.css</li>
+        <li>Practice: Add a new section to homepage</li>
+    </ul>
+
+    <h3>Phase 2: Intermediate (Next 1-2 months)</h3>
+    <ul>
+        <li>Learn CSS Flexbox and Grid</li>
+        <li>Learn JavaScript basics</li>
+        <li>Understand Bootstrap grid deeply</li>
+        <li>Practice: Create a completely new page from scratch</li>
+    </ul>
+
+    <h3>Phase 3: Advanced (3-6 months)</h3>
+    <ul>
+        <li>Learn a JavaScript framework (React or Vue)</li>
+        <li>Learn backend basics (Node.js)</li>
+        <li>Learn database basics (MongoDB)</li>
+        <li>Practice: Add real login/register functionality</li>
+    </ul>
+
+    <h3>Free Learning Resources</h3>
+    <table>
+        <tr>
+            <th>Topic</th>
+            <th>Resource</th>
+        </tr>
+        <tr>
+            <td>HTML/CSS</td>
+            <td>freeCodeCamp.org</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>JavaScript.info</td>
+        </tr>
+        <tr>
+            <td>Bootstrap</td>
+            <td>GetBootstrap.com/docs</td>
+        </tr>
+        <tr>
+            <td>General</td>
+            <td>MDN Web Docs (developer.mozilla.org)</td>
+        </tr>
+    </table>
+
+    <!-- QUICK REFERENCE -->
+    <h2 class="page-break">Quick Reference Card</h2>
+
+    <h3>Common Tasks</h3>
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Where to Go</th>
+        </tr>
+        <tr>
+            <td>Change colors</td>
+            <td><code>assets/css/theme.css</code> → <code>:root</code> section</td>
+        </tr>
+        <tr>
+            <td>Change fonts</td>
+            <td><code>theme.css</code> → <code>font-family</code></td>
+        </tr>
+        <tr>
+            <td>Add animation</td>
+            <td>Add <code>data-aos="fade-up"</code> to element</td>
+        </tr>
+        <tr>
+            <td>Change images</td>
+            <td>Edit <code>src</code> in <code>&lt;img&gt;</code> tags</td>
+        </tr>
+        <tr>
+            <td>Add new page</td>
+            <td>Copy existing page, rename, update nav</td>
+        </tr>
+    </table>
+
+    <h3>Key CSS Classes</h3>
+    <table>
+        <tr>
+            <th>Class</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td><code>.container</code></td>
+            <td>Centers content with max-width</td>
+        </tr>
+        <tr>
+            <td><code>.section</code></td>
+            <td>Standard section padding</td>
+        </tr>
+        <tr>
+            <td><code>.card-pragma</code></td>
+            <td>Styled card component</td>
+        </tr>
+        <tr>
+            <td><code>.btn-pragma</code></td>
+            <td>Base button class</td>
+        </tr>
+        <tr>
+            <td><code>.btn-gold</code></td>
+            <td>Gold colored button</td>
+        </tr>
+        <tr>
+            <td><code>.text-center</code></td>
+            <td>Center text</td>
+        </tr>
+    </table>
+
+    <div class="box box-gold" style="margin-top: 40px; text-align: center;">
+        <h3 style="margin-top: 0;">🎉 Congratulations!</h3>
+        <p>You now have a complete understanding of this website.<br>
+            Start with small changes, test frequently, and build confidence gradually!</p>
+    </div>
+
+    <p style="text-align: center; color: #64748b; margin-top: 40px;">
+        <em>Document created for Pragma Education Website • February 2025</em>
+    </p>
+
+</body>
+
+</html>
